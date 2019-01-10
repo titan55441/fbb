@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/swiper.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/jpages.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/font.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/animate.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/main.css">
+</head>
+<body>
+<!--header-->
+{dede:include filename="head.htm"/}
+
+<!--产品中心-->
+<div class="products_content ">
+    <!--banner-->
+    <div class="pro_content_banner">
+        <div class="pro_banner">
+            <img src="{dede:global.cfg_templets_skin/}/static/picture/banner.png" alt="">
+        </div>
+        <div class="pro_nav">
+            <div class="container">
+                <div class="pro_nav_title">
+                    <h2 class="en">PRODUCTS</h2>
+                    <!--<p class="name">{dede:field.title/}</p>-->
+                    <p class="name">{dede:field.typename/}</p>
+                </div>
+                <div class="pro_nav_tab">
+                    <!--<a href="javascript:;" class="active">精选水果</a>-->
+                    {dede:channel      row='4'        type ='son'  currentstyle="<a href='~typelink~' class='active'>~typename~</a>" }
+                    <a href="[field:typelink/]">[field:typename/]</a>
+                    {/dede:channel}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="tab_container">
+            <div class="pro_item_box clearfix">
+                <ul id="page_container">
+                    {dede:arclist          row='12'             }
+                    <li><a href="[field:arcurl/]">
+                        <div class="pro_item">
+                            <div class="pro_item_pic">
+                                <img src="[field:picname/]" alt="">
+                            </div>
+                            <div class="pro_item_dec">
+                                <p class="pro_dec_text">[field:title/]</p>
+                                <p class="pro_dec_num">00 <span class="line"></span></p>
+                                <span class="go_icon"></span>
+                            </div>
+                        </div>
+                    </a></li>
+                    {/dede:arclist}
+                </ul>
+            </div>
+            <div class="holder"></div>
+        </div>
+
+    </div>
+
+</div>
+<!--底部-->
+{dede:include filename="footer.htm"/}
+</body>
+</html>
+<script src="{dede:global.cfg_templets_skin/}/static/js/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/jpages.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/wow.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/common.js"></script>
+<script>
+    $(".holder").jPages({
+        containerID: "page_container",
+        keyBrowse: true
+    });
+
+
+</script>

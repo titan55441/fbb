@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/swiper.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/jpages.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/font.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/animate.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/main.css">
+</head>
+<body>
+<!--header-->
+{dede:include filename="head.htm"/}
+
+<!--资讯中心-->
+<div class="products_content ">
+    <!--banner-->
+    <div class="pro_content_banner">
+        <div class="pro_banner">
+            <img src="{dede:global.cfg_templets_skin/}/static/picture/banner.png" alt="">
+        </div>
+        <div class="pro_nav">
+            <div class="container">
+                <div class="pro_nav_title">
+                    <h2 class="en">NEWS</h2>
+
+                    <!--<p class="name">{dede:field.title/}</p>-->
+                    <p class="name">{dede:field.typename/}</p>
+
+                </div>
+
+                <div class="pro_nav_tab">
+                    <!--<a href="javascript:;" class="active">企业新闻</a>-->
+                    {dede:channel row='4' type ='son' currentstyle="<a href='~typelink~' class='active'>~typename~</a>" }
+                    <a href="[field:typelink/]">[field:typename/]</a>
+                    {/dede:channel}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="tab_container">
+            <div class="news_content">
+                <ul class="news_con_list" id="page_container">
+                    <!--
+                    <li class="news_con_item wow fadeInUp">
+                        <a href="news_detail.html" class="clearfix">
+                            <div class="news_pic left">
+                                <img src="{dede:global.cfg_templets_skin/}/static/picture/news_pic.png" alt="">
+                            </div>
+                            <div class="news_info right">
+                                <div class="news_time">
+                                    <span class="day">26</span>
+                                    <p class="year">2017-08</p>
+                                </div>
+                                <div class="news_text">
+                                    <h2 class="news_text_tit">秋天吃什麼水果?多吃7種水果防秋燥</h2>
+                                    <p class="news_text_dec">最近氣溫稍微降低,尤其是早晚溫差稍大,秋天模式已經開啟。秋天空氣比較干燥,這時候可以多吃些水果
+                                        補充水分。可是秋天吃什麼水果好? 秋天吃什麼水果? </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="news_con_item wow fadeInUp" data-wow-delay="0.2s">
+                        <a href="news_detail.html" class="clearfix">
+                            <div class="news_pic left">
+                                <img src="{dede:global.cfg_templets_skin/}/static/picture/news_pic.png" alt="">
+                            </div>
+                            <div class="news_info right">
+                                <div class="news_time">
+                                    <span class="day">26</span>
+                                    <p class="year">2017-08</p>
+                                </div>
+                                <div class="news_text">
+                                    <h2 class="news_text_tit">秋天吃什麼水果?多吃7種水果防秋燥</h2>
+                                    <p class="news_text_dec">最近氣溫稍微降低,尤其是早晚溫差稍大,秋天模式已經開啟。秋天空氣比較干燥,這時候可以多吃些水果
+                                        補充水分。可是秋天吃什麼水果好? 秋天吃什麼水果? </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    -->
+                    {dede:arclist          row='10'             }
+                    <li class="news_con_item wow fadeInUp" data-wow-delay="0.3s">
+                        <a href="[field:arcurl/]" class="clearfix">
+                            <div class="news_pic left">
+                                <img src="[field:picname/]" alt="">
+                            </div>
+                            <div class="news_info right">
+                                <div class="news_time">
+                                    <span class="day">26</span>
+                                    <p class="year">[field:pubdate function="MyDate('Y-m-d',@me)"/]</p>
+                                </div>
+                                <div class="news_text">
+                                    <h2 class="news_text_tit">[field:title/]</h2>
+                                    <p class="news_text_dec">[field:description function="cn_substr(@me,80)"/]...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    {/dede:arclist}
+
+                </ul>
+            </div>
+            <div class="holder"></div>
+        </div>
+
+    </div>
+
+</div>
+<!--底部-->
+{dede:include filename="footer.htm"/}
+</body>
+</html>
+<script src="{dede:global.cfg_templets_skin/}/static/js/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/jpages.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/wow.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/common.js"></script>
+<script>
+    $(".holder").jPages({
+        containerID: "page_container",
+        keyBrowse: true
+    });
+
+
+</script>

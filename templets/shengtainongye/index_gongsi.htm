@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta name="author" content="{dede:global.cfg_webname/}" />
+    <meta name="copyright" content="{dede:global.cfg_webname/}" />
+    <!--<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/{dede:global.cfg_templets_skin/}/static/js/protect.js"></script>-->
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/swiper.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/jpages.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/font.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/animate.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/main.css">
+</head>
+<body>
+<!--header-->
+{dede:include filename="head.htm"/}
+
+
+<!--资讯中心-->
+<div class="products_content ">
+    <!--banner-->
+    <div class="pro_content_banner">
+        <div class="pro_banner">
+            <img src="{dede:global.cfg_templets_skin/}/static/picture/banner.png" alt="">
+        </div>
+        <div class="pro_nav">
+            <div class="container">
+                <div class="pro_nav_title">
+                    <h2 class="en">COMPANY</h2>
+                    <p class="name">{dede:field.title/}</p>
+                </div>
+                <div class="pro_nav_tab">
+
+                    <a href="javascript:;" class="active">企业简介</a>
+                    {dede:channel          row='3'       type ='son'    typeid ='1' }
+                    <a href="[field:typelink/]">[field:typename/]</a>
+                    {/dede:channel}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--公司动态-->
+    <div class="company">
+        <span class="company_bg"></span>
+        <div class="container">
+            <div class="clearfix company_top">
+                <div class="left company_top_l">
+                    <div class="company_logo wow fadeInUp"><img src="{dede:global.cfg_templets_skin/}/static/picture/logo2.png" alt=""></div>
+                    <div class="company_text">
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s">海南和民生态农业有限公司</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.3s">
+                            海南和民生态农业有限公司以基地化、品质化、标准化、品牌化的发展战略为指引，
+                            目前，已发展成为一家集基地种植、加工包装、冷藏保鲜、批发配送等
+                            全产业链为一体的集团化公司。
+                        </p>
+                        <div class="company_pic wow fadeInUp"  data-wow-delay="0.3s">
+                            <img src="{dede:global.cfg_templets_skin/}/static/picture/pic1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="right company_top_r">
+                    <div class="company_dec2">
+                        <div class="company_dec_pic">
+                            <img src="{dede:global.cfg_templets_skin/}/static/picture/1.png" alt="" class="img img1 wow fadeInUp">
+                            <img src="{dede:global.cfg_templets_skin/}/static/picture/12.png" alt="" class="img img2 wow fadeInUp" data-wow-delay="0.2s">
+                            <img src="{dede:global.cfg_templets_skin/}/static/picture/3.png" alt="" class="img img3 wow fadeInUp" data-wow-delay="0.3s">
+                        </div>
+
+                        <div class="company_dec_text wow fadeInUp" data-wow-delay="0.4s">
+                            和民生态农业致力于整合全球资源，引领先进的国际意识观，<br>
+                            我们用心把握海内外各产品的不同特性，针对性的进行种植、筛选和采购。<br>
+                            经过数十载的辛勤耕耘，公司业务发展遍布全球，成绩斐然。
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--我们的服务-->
+            <div class="service_box">
+                <div class="service_tit wow fadeInUp">
+                    <h2 class="service_en">SERVICE</h2>
+                    <p class="service_zh">
+                        <span class="name">我们的服务</span>
+                    </p>
+                </div>
+                <div class="service_dec">
+                    <div class="service_dec_text wow fadeInUp" data-wow-delay="0.2s">
+                        和民生态农业更引进国际领先的商业推广理念，<br>
+                        开创鲜果行业多元化的商业格局，以求将中国的健康鲜果推向全球。
+                    </div>
+                    <div class="service_dec_pic">
+                        <div class="service_pic_on wow fadeInUp">
+                            <img src="{dede:global.cfg_templets_skin/}/static/picture/4.png" alt="">
+                        </div>
+                        <div class="service_pic_two wow fadeInUp" data-wow-delay="0.2s">
+                            <img src="{dede:global.cfg_templets_skin/}/static/picture/5.png" alt="">
+                            <img src="{dede:global.cfg_templets_skin/}/static/picture/6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--企业愿景-->
+            <div class="company_yj">
+                <div class="company_yj_tit wow fadeInUp">
+                    <h2>CORPORATE VISION</h2>
+                    <P>企业愿景</P>
+                </div>
+                <div class="company_j_dec wow fadeInUp" data-wow-delay="0.3s">
+                    <p>企业的成功体现于消费者的信赖，和民生态农业始终秉承包容汇聚的行业精神，</p>
+                    <p> 吸收行业日新月异的变化和需求，对品牌及产品持续投入真心、真意、真诚，确保品质如一。</p>
+                    <p>我们始终将客户的感受放在首位，保持高度的品牌渗透力和高效的客户服务力，</p>
+                    <p> 励志成为中国果业金字招牌，为千家万户带去安全健康、新鲜美味的优质果品。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+<!--底部-->
+{dede:include filename="footer.htm"/}
+</body>
+</html>
+<script src="{dede:global.cfg_templets_skin/}/static/js/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/wow.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/swiper.jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/common.js"></script>

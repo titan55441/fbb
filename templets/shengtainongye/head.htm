@@ -1,0 +1,104 @@
+<div class="header_wrap">
+    <div class="header fixed_top wow fadeInDown ">
+        <div class="container">
+            <div class="left header_nav">
+                <ul class="header_nav_list clearfix">
+                    <li class="">
+                        <a href="{dede:global.cfg_indexurl/}">
+                            <p class="nav_name">网站首页</p>
+                            <p class="nav_en">HOME</p>
+                            <span class="nav_dot"></span>
+                        </a>
+                    </li>
+                    {dede:channelartlist row='3' typeid='1,2,3'    currentstyle="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>" }
+                    <li class="{dede:field.active/}">
+                        <a href="{dede:field name='typeurl'/}">
+                            <p class="nav_name">{dede:field name='typename'/}</p>
+                            <p class="nav_en">{dede:field name='typenameen'/}</p>
+                            <span class="nav_dot"></span>
+                        </a>
+                    </li>
+                    {/dede:channelartlist}
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="{dede:global.cfg_templets_skin/}/static/picture/logo.png" alt="">
+            </div>
+            <div class="right header_nav">
+                <ul class="header_nav_list clearfix">
+                    {dede:channelartlist row='4' typeid='4,5,6,7'  currentstyle="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>" }
+                    <li class="{dede:field.active/}">
+                        <a href="{dede:field name='typeurl'/}">
+                            <p class="nav_name">{dede:field name='typename'/}</p>
+                            <p class="nav_en">{dede:field name='typenameen'/}</p>
+                            <span class="nav_dot"></span>
+                        </a>
+                    </li>
+                    {/dede:channelartlist}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header fixed_top_scroll wow fadeInDown">
+        <div class="container">
+            <div class="left header_nav">
+                <ul class="header_nav_list clearfix">
+                    <li class="active">
+                        <a href="{dede:global.cfg_indexurl/}">
+                            <p class="nav_name">网站首页</p>
+                            <p class="nav_en">HOME</p>
+                            <span class="nav_dot"></span>
+                        </a>
+                    </li>
+                    {dede:channelartlist row='3' typeid='1,2,3'  currentstyle="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>" }
+                    <li class="{dede:field.active/}">
+                        <a href="{dede:field name='typeurl'/}">
+                            <p class="nav_name">{dede:field name='typename'/}</p>
+                            <p class="nav_en">{dede:field name='typenameen'/}</p>
+                            <span class="nav_dot"></span>
+                        </a>
+                    </li>
+                    {/dede:channelartlist}
+                </ul>
+            </div>
+            <div class="logo logo_scroll">
+                <img src="{dede:global.cfg_templets_skin/}/static/picture/logo2.png" alt="">
+            </div>
+            <div class="right header_nav">
+                <ul class="header_nav_list clearfix">
+                    {dede:channelartlist row='4' typeid='4,5,6,7'  currentstyle="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>" }
+                    <li class="{dede:field.active/}">
+                        <a href="{dede:field name='typeurl'/}">
+                            <p class="nav_name">{dede:field name='typename'/}</p>
+                            <p class="nav_en">{dede:field name='typenameen'/}</p>
+                            <span class="nav_dot"></span>
+                        </a>
+                    </li>
+                    {/dede:channelartlist}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header_small">
+        <div class="header_small_btn">
+            <i class="fa-align-justify fa"></i>
+        </div>
+        <div class="header_small_nav">
+            <ul>
+                <li>
+                    <a href="{dede:global.cfg_indexurl/}">网站首页</a>
+                </li>
+                {dede:channelartlist        row='7'        typeid ='1,2,3,4,5,6,7'     currentstyle="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>" }
+                <li class="{dede:field.active/}">
+                    <a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a>
+                </li>
+                {/dede:channelartlist}
+                <!--{dede:channel        type ='top'        row='8'    currentstyle="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>"       }-->
+                <!--<li>-->
+                    <!--<a href="[field:typelink/]">[field:typename/]</a>-->
+                <!--</li>-->
+                <!--{/dede:channel}-->
+            </ul>
+        </div>
+    </div>
+</div>

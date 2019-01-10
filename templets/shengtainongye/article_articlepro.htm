@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>资讯中心-详情</title>
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/swiper.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/jpages.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/font.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/animate.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/main.css">
+</head>
+<body>
+<!--header-->
+{dede:include filename="head.htm"/}
+<!--产品中心-->
+<div class="products_content ">
+    <!--banner-->
+    <div class="pro_content_banner">
+        <div class="pro_banner">
+            <img src="{dede:global.cfg_templets_skin/}/static/picture/banner.png" alt="">
+        </div>
+        <div class="pro_nav">
+            <div class="container">
+                <div class="pro_nav_title">
+                    <h2 class="en">PRODUCTS</h2>
+                    <p class="name">{dede:field.typename/}</p>
+                </div>
+                <div class="pro_nav_tab">
+                    <!--<a href="javascript:;" class="active">精选水果</a>-->
+                    {dede:channel row='4' type ='son' currentstyle="<a href='~typelink~' class='active'>~typename~</a>" }
+                    <a href="[field:typelink/]">[field:typename/]</a>
+                    {/dede:channel}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="tab_container">
+            <!--产品详情
+            <div class="products_detail">
+                <div class="pro_detail_top clearfix">
+                    <div class="pro_detail_pic left">
+                        <img src="static/picture/sg2.png" alt="">
+                    </div>
+                    <div class="pro_detail_dec right">
+                        <h2 class="detail_name">和民生态-新鲜上架沙瓤西瓜</h2>
+                        <ul class="detail_info">
+                            <li class="detail_item">
+                                保质期：<span>30天</span>
+                            </li>
+                            <li class="detail_item">
+                                规格：<span>8斤以上</span>
+                            </li>
+                            <li class="detail_item">
+                                是否为有机食品：<span>是</span>
+                            </li>
+                            <li class="detail_item">
+                                产地：<span>中国</span>
+                            </li>
+                            <li class="detail_item">
+                                包装：<span>独立包装</span>
+                            </li>
+                        </ul>
+                        <div class="detail_contact">
+                            <a href="javascript:;" class="contact_btn"><i class="fa fa-qq"></i>在线咨询</a>
+                            <span>咨询热线：000-54545</span>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <!--详情介绍-->
+                <div class="pro_detail_bot">
+                    <!--
+                    <div class="pro_detail_title">
+                        <h2 >DETAILS</h2>
+                        <div class="pro_detail_title_in">
+                            <span>产品详情</span>
+                        </div>
+                    </div>
+                    -->
+                    <div class="pro_detail_con">
+                        {dede:field.body/}
+                    </div>
+                </div>
+            </div>
+
+            <!--翻页-->
+            <div class="pro_detail_page">
+                <a href="javascript:;" class="page_item">
+                    <span>{dede:prenext get='pre'/}</span>
+                    <span class="color_d">PRO</span>
+                </a>
+                |
+                <a href="javascript:;" class="page_item">
+                    <span class="color_g">NEXT</span>
+                    <span>{dede:prenext get='next'/}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+<!--底部-->
+{dede:include filename="footer.htm"/}
+</body>
+</html>
+<script src="{dede:global.cfg_templets_skin/}/static/js/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/wow.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/common.js"></script>

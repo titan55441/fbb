@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>资讯中心-详情</title>
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/swiper.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/jpages.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/font.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/animate.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/main.css">
+</head>
+<body>
+<!--header-->
+{dede:include filename="head.htm"/}
+
+<!--资讯中心-->
+<div class="products_content ">
+    <!--banner-->
+    <div class="pro_content_banner">
+        <div class="pro_banner">
+            <img src="{dede:global.cfg_templets_skin/}/static/picture/banner.png" alt="">
+        </div>
+        <div class="pro_nav">
+            <div class="container">
+                <div class="pro_nav_title">
+                    <h2 class="en">NEWS</h2>
+                    <p class="name">{dede:field.typename/}</p>
+                </div>
+                <div class="pro_nav_tab">
+                    {dede:channel row='4' type ='son' currentstyle="<a href='~typelink~' class='active'>~typename~</a>" }
+                    <a href="[field:typelink/]">[field:typename/]</a>
+                    {/dede:channel}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="tab_container">
+            <div class="news_detail">
+                <div class="news_detail_title">
+                    <h2>{dede:field.title/}</h2>
+                    <div class="news_detail_data">
+                        <span class="data_item">发布时间：<span>{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</span></span>
+                        <span class="data_item">浏览人次：<span><script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}"type='text/javascript' language="javascript"></script></span></span>
+                    </div>
+                </div>
+                <div class="new_detail_con">
+                    {dede:field.body/}
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--资讯翻页分享-->
+    <div class="news_detail_bot">
+        <div class="container clearfix">
+            <div class="left news_detail_fy">
+                <a href="javascript:;">{dede:prenext get='pre'/}</a>
+                <a href="javascript:;">{dede:prenext get='next'/}</a>
+            </div>
+            <div class="right news_detail_share">
+                <a href="{dede:type typeid='0′ row=1}[field:typelink /]{/dede:type}" class="back_list"><i class="back_icon"></i>返回列表</a>
+                <div class="share_box">
+                    <!-- JiaThis Button BEGIN -->
+                    <div class="jiathis_style clearfix">
+
+                        <a class="jiathis_button_qzone"></a>
+                        <a class="jiathis_button_tsina"></a>
+                        <a class="jiathis_button_tqq"></a>
+                        <a class="jiathis_button_weixin"></a>
+                        <a class="jiathis_button_renren"></a>
+                        <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis"
+                           target="_blank"></a>
+
+                    </div>
+                    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/static/js/jia.js" charset="utf-8"></script>
+                    <!-- JiaThis Button END -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+{dede:include filename="footer.htm"/}
+</body>
+</html>
+<script src="{dede:global.cfg_templets_skin/}/static/js/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/wow.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/common.js"></script>

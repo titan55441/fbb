@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:global.cfg_keywords/}"/>
+    <meta name="description" content="{dede:global.cfg_description/}"/>
+    <meta name="author" content="{dede:global.cfg_webname/}"/>
+    <meta name="copyright" content="{dede:global.cfg_webname/}"/>
+    <!--<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/{dede:global.cfg_templets_skin/}/static/js/protect.js"></script>-->
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/swiper.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/jpages.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/font.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/animate.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/main.css">
+</head>
+<body>
+<!--header-->
+{dede:include filename="head.htm"/}
+
+
+<!--资讯中心-->
+<div class="products_content ">
+    <!--banner-->
+    <div class="pro_content_banner">
+        <div class="pro_banner">
+            <img src="{dede:global.cfg_templets_skin/}/static/picture/banner.png" alt="">
+        </div>
+        <div class="pro_nav">
+            <div class="container">
+                <div class="pro_nav_title">
+                    <h2 class="en">COMPANY</h2>
+                    <!--<p class="name">{dede:field.title/}</p>-->
+                    <p class="name">{dede:field.typename/}</p>
+                </div>
+                <div class="pro_nav_tab">
+                    <!--<a href="javascript:;" class="active">企业简介</a>-->
+                    {dede:channel          row='4'       type ='son'  currentstyle="<a href='~typelink~' class='active'>~typename~</a>" }
+                    <a href="[field:typelink/]">[field:typename/]</a>
+                    {/dede:channel}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--公司动态-->
+    <div class="company">
+        <span class="company_bg"></span>
+        <div class="container">
+            <div class="clearfix company_top">
+                <div class="left company_top_l">
+                    <div class="company_logo wow fadeInUp"><img
+                            src="{dede:global.cfg_templets_skin/}/static/picture/logo98.png" alt=""></div>
+                    <div class="company_text">
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s">{dede:global.jianjie_gsmc/}</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.3s">
+                            {dede:global.jianjie_gsjja/}
+                        </p>
+                        <div class="company_pic wow fadeInUp" data-wow-delay="0.3s">
+                            <img src="{dede:global.cfg_templets_skin/}/static/picture/pic1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="right company_top_r">
+                    <div class="company_dec2">
+                        <div class="company_dec_pic">
+                            <img src="{dede:global.cfg_templets_skin/}/static/picture/1.png" alt=""
+                                 class="img img1 wow fadeInUp">
+                            <img src="{dede:global.cfg_templets_skin/}/static/picture/12.png" alt=""
+                                 class="img img2 wow fadeInUp" data-wow-delay="0.2s">
+                            <img src="{dede:global.cfg_templets_skin/}/static/picture/3.png" alt=""
+                                 class="img img3 wow fadeInUp" data-wow-delay="0.3s">
+                        </div>
+
+                        <div class="company_dec_text wow fadeInUp" data-wow-delay="0.4s">
+                            {dede:global.jianjie_gsjjb/}
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--我们的服务-->
+            <div class="service_box">
+                <div class="service_tit wow fadeInUp">
+                    <h2 class="service_en">SERVICE</h2>
+                    <p class="service_zh">
+                        <span class="name">我们的服务</span>
+                    </p>
+                </div>
+                <div class="service_dec">
+                    <div class="service_dec_text wow fadeInUp" data-wow-delay="0.2s">
+                        {dede:global.jianjie_gsjjc/}
+                    </div>
+                    <div class="service_dec_pic">
+                        <div class="service_pic_on wow fadeInUp">
+                            <img src="{dede:global.cfg_templets_skin/}/static/picture/4.png" alt="">
+                        </div>
+                        <div class="service_pic_two wow fadeInUp" data-wow-delay="0.2s">
+                            <img src="{dede:global.cfg_templets_skin/}/static/picture/5.png" alt="">
+                            <img src="{dede:global.cfg_templets_skin/}/static/picture/6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--企业愿景-->
+            <div class="company_yj">
+                <div class="company_yj_tit wow fadeInUp">
+                    <h2>CORPORATE VISION</h2>
+                    <P>企业愿景</P>
+                </div>
+                <div class="company_j_dec wow fadeInUp" data-wow-delay="0.3s">
+                    {dede:global.jianjie_gsjjd/}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!--底部-->
+{dede:include filename="footer.htm"/}
+</body>
+</html>
+<script src="{dede:global.cfg_templets_skin/}/static/js/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/wow.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/swiper.jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/common.js"></script>

@@ -1,0 +1,48 @@
+<?php
+$z[0]=Array("global","",272,299);
+$z[0][4]=array();
+$z[0][4]['name']="cfg_indexurl";
+$z[1]=Array("channelartlist","\n                    <li class=\"{dede:field.active/}\">\n                        <a href=\"{dede:field name='typeurl'/}\">\n                            <p class=\"nav_name\">{dede:field name='typename'/}</p>\n                            <p class=\"nav_en\">{dede:field name='typenameen'/}</p>\n                            <span class=\"nav_dot\"></span>\n                        </a>\n                    </li>\n                    ",555,1135);
+$z[1][4]=array();
+$z[1][4]['row']="3";
+$z[1][4]['typeid']="1,2,3";
+$z[1][4]['currentstyle']="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>";
+$z[2]=Array("global","",1234,1266);
+$z[2][4]=array();
+$z[2][4]['name']="cfg_templets_skin";
+$z[3]=Array("channelartlist","\n                    <li class=\"{dede:field.active/}\">\n                        <a href=\"{dede:field name='typeurl'/}\">\n                            <p class=\"nav_name\">{dede:field name='typename'/}</p>\n                            <p class=\"nav_en\">{dede:field name='typenameen'/}</p>\n                            <span class=\"nav_dot\"></span>\n                        </a>\n                    </li>\n                    ",1436,2016);
+$z[3][4]=array();
+$z[3][4]['row']="4";
+$z[3][4]['typeid']="4,5,6,7";
+$z[3][4]['currentstyle']="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>";
+$z[4]=Array("global","",2342,2369);
+$z[4][4]=array();
+$z[4][4]['name']="cfg_indexurl";
+$z[5]=Array("channelartlist","\n                    <li class=\"{dede:field.active/}\">\n                        <a href=\"{dede:field name='typeurl'/}\">\n                            <p class=\"nav_name\">{dede:field name='typename'/}</p>\n                            <p class=\"nav_en\">{dede:field name='typenameen'/}</p>\n                            <span class=\"nav_dot\"></span>\n                        </a>\n                    </li>\n                    ",2625,3203);
+$z[5][4]=array();
+$z[5][4]['row']="3";
+$z[5][4]['typeid']="1,2,3";
+$z[5][4]['currentstyle']="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>";
+$z[6]=Array("global","",3314,3346);
+$z[6][4]=array();
+$z[6][4]['name']="cfg_templets_skin";
+$z[7]=Array("channelartlist","\n                    <li class=\"{dede:field.active/}\">\n                        <a href=\"{dede:field name='typeurl'/}\">\n                            <p class=\"nav_name\">{dede:field name='typename'/}</p>\n                            <p class=\"nav_en\">{dede:field name='typenameen'/}</p>\n                            <span class=\"nav_dot\"></span>\n                        </a>\n                    </li>\n                    ",3517,4097);
+$z[7][4]=array();
+$z[7][4]['row']="4";
+$z[7][4]['typeid']="4,5,6,7";
+$z[7][4]['currentstyle']="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>";
+$z[8]=Array("global","",4404,4431);
+$z[8][4]=array();
+$z[8][4]['name']="cfg_indexurl";
+$z[9]=Array("channelartlist","\n                <li class=\"{dede:field.active/}\">\n                    <a href=\"{dede:field name='typeurl'/}\">{dede:field name='typename'/}</a>\n                </li>\n                ",4488,4858);
+$z[9][4]=array();
+$z[9][4]['row']="7";
+$z[9][4]['typeid']="1,2,3,4,5,6,7";
+$z[9][4]['currentstyle']="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>";
+$z[10]=Array("channel","-->\n                <!--<li>-->\n                    <!--<a href=\"[field:typelink/]\">[field:typename/]</a>-->\n                <!--</li>-->\n                <!--",4879,5204);
+$z[10][4]=array();
+$z[10][4]['type']="top";
+$z[10][4]['row']="8";
+$z[10][4]['currentstyle']="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>";
+
+?>

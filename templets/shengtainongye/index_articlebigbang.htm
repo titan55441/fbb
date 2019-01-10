@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:global.cfg_keywords/}"/>
+    <meta name="description" content="{dede:global.cfg_description/}"/>
+    <meta name="author" content="{dede:global.cfg_webname/}"/>
+    <meta name="copyright" content="{dede:global.cfg_webname/}"/>
+    <!--<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/{dede:global.cfg_templets_skin/}/static/js/protect.js"></script>-->
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/swiper.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/jpages.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/font.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/animate.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/main.css">
+</head>
+<body>
+<!--header-->
+{dede:include filename="head.htm"/}
+
+<div class="products_content ">
+    <!--banner-->
+    <div class="pro_content_banner">
+        <div class="pro_banner">
+            <img src="{dede:global.cfg_templets_skin/}/static/picture/banner.png" alt="">
+        </div>
+        <div class="pro_nav">
+            <div class="container">
+                <div class="pro_nav_title">
+                    <h2 class="en">COMPANY</h2>
+                    <!--<p class="name">{dede:field.title/}</p>-->
+                    <p class="name">{dede:field.typename/}</p>
+                </div>
+                <div class="pro_nav_tab">
+                    <!--<a href="javascript:;" class="active">企业简介</a>-->
+                    {dede:channel row='4' type ='son' currentstyle="<a href='~typelink~' class='active'>~typename~</a>"}
+                    <a href="[field:typelink/]">[field:typename/]</a>
+                    {/dede:channel}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--公司动态-->
+    <div class="company" style="min-height:auto;">
+        <div class="container">
+            <div class="company_yj">
+                <div class="company_yj_tit wow fadeInUp">
+                    <h2>CORPORATE EVENTS</h2>
+                    <P>{dede:field.typename/}</P>
+                </div>
+                <div class="company_j_dec wow fadeInUp" data-wow-delay="0.3s">
+                    <p>
+                        庄园门镜面朝省道，木艺门头直插云霄，端庄秀丽、雄伟霸气。庄园布局紧扣“休闲娱乐”四字，以“一切原生态”为点切入，让人心旷神怡，犹如走进一方净土，忘了烦恼，心静自乐，回味无穷。
+                    <p>
+                        <strong>富宝贝的由来</strong></p>
+                    <p>
+                        庄主的取名也精彩。爷爷取两个孙子小名“宝宝”和“贝贝”各一字，联上己名“迪富”最后一字“富”，倒取连读就是一个悦耳好名“富宝贝”。富宝贝意为“儿孙好，才有代代富”；还有“求富，先必让儿孙富知识”的重教理念。</p>
+                    <p>
+                        <strong>眼前</strong></p>
+                    <p>
+                        江海风韵的美景，春意盎然的世界。</p>
+                    <p>
+                        <strong>餐桌上</strong></p>
+                    <p>
+                        食材取之于绿色生态， 风味美食特色味道赞不绝口。</p>
+                    <p>
+                        <strong>休闲</strong></p>
+                    <p>
+                        假日鱼塘，与鱼斗智戏水，乐在其中。 还有春夏秋冬的田野采摘活动。</p>
+                    <p>
+                        <strong>养生</strong></p>
+                    <p>
+                        放松自己，携家人到这里度假， 体验边远村庄的宁静，延年益寿。</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--底部-->
+{dede:include filename="footer.htm"/}
+</body>
+</html>
+<script src="{dede:global.cfg_templets_skin/}/static/js/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/wow.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/swiper.jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/common.js"></script>
